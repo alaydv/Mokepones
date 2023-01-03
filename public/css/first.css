@@ -1,0 +1,64 @@
+    /* First section */
+body .title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+.title  h1 .title__icons {
+    display: none;
+}
+.choose-mokepon h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 18px;
+    padding: 5px;
+}
+.choose-mokepon .cards {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+    /* Second section */
+.choose-attack h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.attack-button {
+    width: 95px;
+    height: 35px;
+    margin-top: 30px;
+    padding: 5px 10px 6px 15px;
+    font-size: 1.5rem;
+}
+.messages {
+    width: 300px;
+    height: 75px;
+    padding: 15px;
+    margin-top: 25px;
+}
+#restart-button {
+    margin-left: calc(50% - 210px);
+}
+.messages .show-result {
+    font-size: 1rem;
+}
+.check-results {
+    grid-template-columns: repeat(2, 190px);
+    grid-template-rows: 425px;
+    gap: 5px;
+    margin-top: 50px;
+}
+.counter-life {
+    margin-top: 40px;
+}
+.check__name {
+    margin-top: 15px;
+}
+.check__attacks {
+    margin-top: 40px;
+}
+
+/* #map {
+    width: 350px;
+} */

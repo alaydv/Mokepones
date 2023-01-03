@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/first.css" media="(max-width: 830px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Mokepon</title>
+</head>
+<body>
+    <header class="title">
+        <h1><span class="title__icons">🌱 💧 🔥 </span>Mokepon<span class="title__icons"> 🔥 💧 🌱</span></h1>
+    </header>
+    
+    <section id="choose-mokepon" class="choose-mokepon">
+        <h2>Elige tu Mokepon:</h2>
+        <div id="card_container" class="cards"></div>
+        <span class="choose-mokepon__button">
+            <button id="select-mokepon">Seleccionar</button>
+        </span>     
+    </section>
+
+    <section id="canvas-map">
+        <h3>Recorre el mapa con tu mokepon</h3>
+        <canvas id="map"></canvas>
+        <button ontouchend="stopMove()" ontouchstart="upMove()" onmouseup="stopMove()" onmousedown="upMove()">arriba</button>
+        <div>
+            <button ontouchend="stopMove()" ontouchstart="leftMove()" onmouseup="stopMove()" onmousedown="leftMove()">izquierda</button>
+            <button ontouchend="stopMove()" ontouchstart="downMove()" onmouseup="stopMove()" onmousedown="downMove()">abajo</button>
+            <button ontouchend="stopMove()" ontouchstart="rightMove()" onmouseup="stopMove()" onmousedown="rightMove()">derecha</button>
+        </div>
+    </section>
+
+    <section id="choose-atack" class="choose-attack">
+        <h2>Eligue tus ataques:</h2>
+        
+        <div id="attacks-container"></div>
+
+        <div class="messages">
+            <p id="show-result"></p>
+            <section id="restart">
+                <button id="restart-button">Reiniciar</button>
+            </section>
+        </div>
+
+        <section class="check-results">
+            <div class="check-results__container">
+                <p id="player-life" class="counter-life">0</p>
+                <p class="election">Mokepon del jugador:</p> 
+                <span id="your-mokepon" class="check__name"></span>
+                <p id="player-attacks" class="check__attacks"></p>
+            </div>
+            <div class="check-results__container">
+                <p id="enemy-life" class="counter-life">0</p>
+                <p class="election">Mokepon enemigo:</p> 
+                <span id="enemy-mokepon" class="check__name"></span>
+                <p id="enemy-attacks" class="check__attacks"></p>
+            </div>
+        </section>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="./js/mokepon.js"></script>
+</body>
+</html>
